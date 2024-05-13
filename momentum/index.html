@@ -7,36 +7,60 @@
   <!-- <link rel="stylesheet" href="css/style.css" /> -->
   <title>Momentum App</title>
   <style>
-    .hidden {
-      display: none;
-    }
+    *{margin:0;padding:0;}
+    .wrap{width:100vw;height:100vh;position:relative;}
+	.box{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);width:400px;height:300px;background:rgba(256, 256, 256, 0.3);border-radius:18px;padding:50px;}
+	.box #clock{font-size:48px;text-align:center;}
+
+	.greeting_area{text-align:center;}
+	.greeting_area input{height:30px;line-height:30px;padding:0 10px;border-radius:3px;border:none;font-size:18px;}
+	.greeting_area input.name_area{margin-right:5px;}
+
+
+
+	#quote p{font-size:18px;text-align:center;margin-top:20px;}
+	#quote p.celeb{margin-top:10px;}
+
+	#weather{text-align:center;}
+
+	.hidden{display:none;}
   </style>
 </head>
 
 <body>
 
-  <h2 id="clock">00:00:00</h2>
+	<div class="wrap">
+		<div class="box">
+			<h2 id="clock">00:00:00</h2>
 
-  <form class="hidden" id="login-form">
-    <input required maxlength="15" type="text" placeholder="What is your name?" />
-    <input type="submit" value="Log In" />
-  </form>
+			<div class="greeting_area">
+				<form class="hidden" id="login-form">
+					<input class="name_area" required maxlength="15" type="text" placeholder="What is your name?" />
+					<input type="submit" value="Log In" />
+				</form>
 
-  <h1 class="hidden" id="greeting"></h1>
+				<h1 class="hidden" id="greeting"></h1>
+			</div>
 
-  <form id="todo-form">
-    <input type="text" placeholder="Write a To Do and Press Enter" required />
-  </form>
-  <ul id="todo-list"></ul>
-  <div id="quote">
-    <span></span>
-    <span></span>
-  </div>
+			<div class="todo_area">
+				<form id="todo-form">
+					<input type="text" placeholder="Write a To Do and Press Enter" required />
+				</form>
 
-  <div id="weather">
-    <span></span>
-    <span></span>
-  </div>
+				<ul id="todo-list"></ul>
+			</div>
+
+			<div id="quote">
+				<p></p>
+				<p class="celeb"></p>
+			</div>
+
+			<div id="weather">
+			<span></span>
+			<span></span>
+			</div>
+		</div>
+	</div>
 
   <script src="js/greetings.js"></script>
   <script src="js/clock.js"></script>

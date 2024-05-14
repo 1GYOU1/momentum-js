@@ -3,6 +3,7 @@ const weather = document.querySelector("#weather .description");
 const weatherIcon = document.querySelector("#weather .weather_icon");
 const temp = document.querySelector("#weather .temp");
 const humidity = document.querySelector("#weather .humidity");
+const API_KEY = config.apikey;
 
 city.innerText = "Loading...";
 

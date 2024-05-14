@@ -1,16 +1,26 @@
-const weather = document.querySelector("#weather span:first-child");
-const city = document.querySelector("#weather span:last-child");
-const API_KEY = "241051bf13976dd3ddf8b8d9f247255e";
+const city = document.querySelector("#weather .city");
+const weather = document.querySelector("#weather .description");
+const weatherIcon = document.querySelector("#weather .weather_icon");
+const temp = document.querySelector("#weather .temp");
+const humidity = document.querySelector("#weather .humidity");
+const API_KEY = "5e6eab9b524f3a56daaa108f69b30037";
+
+city.innerText = "Loading...";
 
 function onGeoOk(position) {
   const lat = position.coords.latitude;
   const lon = position.coords.longitude;
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
+  // 로딩중
+  
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      city.innerText = data.name;
-      weather.innerText = `${data.weather[0].main} / ${data.main.temp}`;
+      city.innerText = data.name;//내 위치
+      weatherIcon.setAttribute('src', `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`)// 날씨 아이콘
+      weather.innerText = `${data.weather[0].main}`;// 날씨
+      temp.innerText = `${parseFloat(data.main.temp).toFixed(1)}℃ /`;// 섭씨
+      humidity.innerText = `${data.main.humidity}%`;// 습도
     });
 }
 function onGeoError() {

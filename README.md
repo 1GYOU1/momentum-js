@@ -8,7 +8,8 @@
 
 ### 👀 MainPage View
 
-<!-- <img src="https://github.com/1GYOU1/painting-board/assets/90018379/7ea47302-2aaa-454f-a370-7342b41e52dd"> -->
+<img src="https://github.com/1GYOU1/momentum-js/assets/90018379/2ecd15ed-df5a-4a15-a2e6-b29f4f819743">
+<img src="https://github.com/1GYOU1/momentum-js/assets/90018379/a0945014-42be-42bd-87c8-034e91f4194b">
 
 <br>
 

@@ -3,14 +3,13 @@ const weather = document.querySelector("#weather .description");
 const weatherIcon = document.querySelector("#weather .weather_icon");
 const temp = document.querySelector("#weather .temp");
 const humidity = document.querySelector("#weather .humidity");
-const API_KEY = config.apikey;
 
 city.innerText = "Loading...";
 
 function onGeoOk(position) {
   const lat = position.coords.latitude;
   const lon = position.coords.longitude;
-  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}&units=metric`;
   // 로딩중
   
   fetch(url)

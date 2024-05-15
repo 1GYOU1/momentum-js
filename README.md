@@ -8,8 +8,8 @@
 
 ### 👀 MainPage View
 
-<img src="https://github.com/1GYOU1/momentum-js/assets/90018379/2ecd15ed-df5a-4a15-a2e6-b29f4f819743">
-<img src="https://github.com/1GYOU1/momentum-js/assets/90018379/a0945014-42be-42bd-87c8-034e91f4194b">
+<img src="https://github.com/1GYOU1/momentum-js/assets/90018379/7595fd73-8b80-46d8-9af6-83b7540d309d">
+<img src="https://github.com/1GYOU1/momentum-js/assets/90018379/81ed5476-1f89-4f47-b323-a7f8fa162732">
 
 <br>
 

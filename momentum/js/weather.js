@@ -19,6 +19,7 @@ function onGeoOk(position) {
       weatherIcon.setAttribute('src', `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`)// 날씨 아이콘
       weather.innerText = `${data.weather[0].main}`;// 날씨
       temp.innerText = `${parseFloat(data.main.temp).toFixed(1)}℃ /`;// 섭씨
+      humidity.classList.add('on');
       humidity.innerText = `${data.main.humidity}%`;// 습도
     });
 }

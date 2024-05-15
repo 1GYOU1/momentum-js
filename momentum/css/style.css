@@ -6,32 +6,35 @@ ul li{list-style:none;}
 .hidden{display:none;}
 
 .box_wrap{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);display:flex;}
-.box{width:400px;height:400px;background:rgba(256, 256, 256, 0.3);border-radius:18px;padding:50px 30px;margin-right:20px;}
-.box.left{display:flex;flex-direction:column;justify-content:space-around;}
-.box.right{width:300px;}
-.box.left .btm_area{display:flex;}
+.box{width:380px;height:450px;background:rgba(256, 256, 256, 0.3);border-radius:18px;padding:30px;}
+.box.left{display:flex;flex-direction:column;justify-content:space-between;margin-right:20px;}
+.box.left #clock{background:rgba(256,256,256,0.2);border-radius:10px;height:80px;line-height:85px;font-size:48px;text-align:center;}
 
-.quote_area{margin-top:15px;}
+.quote_area{background:rgba(256,256,256,0.2);padding:25px 0;border-radius:10px;}
 .quote_area h4{text-align:center;font-size:20px;}
-#quote p{font-size:18px;text-align:center;margin-top:10px;}
+#quote p{font-size:16px;text-align:center;margin-top:10px;}
 
-#weather{text-align:center;font-size:20px;}
+#weather{text-align:center;font-size:20px;background:rgba(256,256,256,0.2);border-radius:10px;padding:25px 0;min-height:150px;}
 #weather .city_area{margin-bottom:20px;}
 #weather .city{background:rgba(256, 256, 256, 0.3);border-radius:30px;display:inline-block;padding:8px 15px;font-size:20px;}
+#weather .humidity.on:before{display:inline-block;width:20px;height:20px;background:url('../img/humidity_i.png')center center/contain no-repeat;content:'';margin-right:5px;}
 #weather .icon_area{margin-top:10px;display:flex;align-items:center;justify-content:center;}
 #weather .weather_icon{background:rgba(256, 256, 256, 0.3);border-radius:50%;margin-right:15px;}
 #weather strong{font-size:28px;}
 #weather span{font-size:28px;}
 
-.box #clock{font-size:48px;text-align:center;}
+.box.right{width:300px;display:flex;flex-direction:column;justify-content:space-between;}
 
-.greeting_area{text-align:center;}
+.greeting_area{text-align:center;background:rgba(256,256,256,0.2);border-radius:10px;height:80px;line-height:80px;}
 .greeting_area input{height:34px;padding:2px 10px;border-radius:3px;border:none;font-size:16px;}
 .greeting_area input.name_area{margin-right:5px;width:170px;height:30px;line-height:30px;}
+.greeting_area h1{line-height:85px;}
 
-.todo_area{text-align:center;}
+.todo_area{text-align:center;background:rgba(256,256,256,0.2);border-radius:10px;}
 .todo_area input{height:34px;line-height:34px;padding:0 10px;border-radius:3px;border:none;font-size:16px;margin-top:20px;width:243px;}
-.todo_area ul{height:250px;overflow-y:auto;}
+.todo_area ul{height:290px;overflow-y:auto;margin-top:10px;}
+.todo_area ul::-webkit-scrollbar{background:rgba(256, 256, 256, 0.3);width:10px;border-radius:5px;}
+.todo_area ul::-webkit-scrollbar-thumb{background:rgba(256, 256, 256, 0.3);border-radius:10px;}
 .todo_area ul li{background:rgba(256, 256, 256, 0.3);border-radius:5px;width:230px;margin:10px auto 0 auto;display:flex;justify-content:space-between;align-items:center;padding:5px 10px;transition:all ease 0.5s;}
 .todo_area ul li:hover{background:rgba(256, 256, 256, 0.7);}
 .todo_area ul li button{background:none;border:none;cursor:pointer;}
